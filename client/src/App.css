@@ -1,0 +1,19 @@
+.App {
+  padding: 0 4.296875%; }
+
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+.Site-content {
+  flex: 1; }
+
+@media (max-width: 376px) {
+  .App {
+    padding: 0 20px; } }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .Site, .Site-content {
+    overflow-y: hidden;
+    overflow-x: hidden; } }

@@ -1,0 +1,28 @@
+.contact__textfield {
+  color: #000000;
+
+  & .mdc-text-field__input {
+    margin-bottom: 1.875rem;
+  }
+
+  & .mdc-text-field__input, .mdc-text-field__bottom-line {
+    color: #000000;
+    font-size: 1rem;
+  }
+
+  & .mdc-text-field__input::placeholder {
+    opacity: 0.5;
+  }
+}
+
+.contact__textfield.mdc-text-field--fullwidth:not(.mdc-text-field--textarea) .mdc-text-field__input {
+  color: #000000;
+}
+
+.contact__textfield.mdc-text-field--fullwidth:not(.mdc-text-field--textarea) {
+  border-bottom-color: #000000;
+}
+
+.send--button {
+  margin-top: 30px;
+}

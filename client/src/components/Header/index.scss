@@ -1,0 +1,271 @@
+$burgundy: #D8127D;
+$concrete: #303133;
+
+.mdc-toolbar {
+  background-color: #fff;
+  color: $concrete;
+}
+
+.mdc-toolbar {
+  padding: 0 4.296875%;
+  height: 80px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+
+  &__row {
+    height: initial;
+    padding: 0;
+    padding-top: 18px;
+    flex-wrap: wrap;
+  }
+
+  &__section {
+    overflow: initial;
+    position: relative;
+
+    @media (max-width: 1023px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  & .logo {
+    height: 24px;
+    width: 153px;
+  }
+}
+
+.middle-section {
+  margin-left: 2%;
+}
+
+.mdc-toolbar__section {
+  align-items: center;
+  flex-grow: 3;
+}
+
+.mdc-toolbar__section {
+  flex-grow: 5;
+}
+
+.mdc-toolbar__section a:not(.mdc-button) {
+  color: $concrete;
+  font-size: 14px;
+  line-height: 1.57;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:not(:last-child) {
+    margin-right: 2.71%;
+  }
+
+  &:hover {
+    color: $burgundy;
+  }
+
+  &.active {
+    color: $burgundy;
+  }
+}
+
+.mdc-toolbar__section--align-end a.mdc-button {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: none;
+  box-shadow: none;
+  border-radius: 4px;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+.toolbar-list {
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  -webkit-margin-before: inherit;
+  -webkit-margin-after: inherit;
+  -webkit-padding-start: 9.5%;
+
+  &__item {
+    list-style-type: none;
+    display: inline-block;
+    color: $concrete;
+    font-weight: 600;
+    opacity: 0.5;
+
+    &.active {
+      opacity: 1;
+    }
+
+    &:hover {
+      color: $burgundy;
+      opacity: 1;
+    }
+
+
+    &:not(:last-child) {
+      margin-right: 8.256%;
+    }
+  }
+
+  &__item--social {
+    opacity: 1;
+
+    &:not(:last-child) {
+      margin-right: 12.3% !important;
+    }
+
+    & path {
+      fill: $concrete;
+    }
+
+    &:hover path {
+      fill: $burgundy;
+    }
+
+  }
+}
+
+.menu-icon {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  z-index: 1;
+  cursor: pointer;
+  width: 24px;
+  height: 12px;
+}
+
+.mdc-drawer {
+  opacity: .95;
+  z-index: 402;
+
+  &__drawer {
+    width: 100%;
+    max-width: 100%;
+    padding: 4.8% 5.337%;
+  }
+
+  &__header {
+    display: flex;
+    height: 26px;
+
+    &:before {
+      content: none;
+    }
+  }
+
+  &__header-content {
+    align-items: flex-start;
+    padding: 12px 15px;
+  }
+
+  .drawer-close-btn {
+    z-index: 99;
+    margin-left: auto;
+    margin-top: 0px;
+    margin-right: 0px;
+    height: 26px;
+    width: 26px;
+    cursor: pointer;
+  }
+
+  .mdc-drawer__content.mdc-list {
+    flex-grow: initial;
+    margin: auto 0;
+
+    .mdc-list-item {
+      justify-content: left;
+      color: $concrete;
+      font-size: 18px;
+      height: auto;
+      margin-bottom: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+
+      &:last-child {
+      }
+
+      &:hover {
+        color: $burgundy;
+      }
+
+      &.active {
+        color: $burgundy;
+      }
+
+      &.mdc-drawer--selected {
+        color: $concrete;
+      }
+    }
+  }
+}
+.mdc-drawer--temporary .mdc-drawer__drawer {
+  min-width: 100%;
+}
+
+.mdc-drawer__content.mdc-list .toolbar-list:last-child {
+  margin-top: 85px;
+}
+
+.mdc-drawer__content.mdc-list .toolbar-list__item--social:not(:last-child) {
+  margin-right: 30px !important;
+}
+
+#choices-categories {
+  display: none;
+}
+
+.mdc-dialog--open {
+  z-index: 402;
+}
+
+@media (max-width: 1023px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .mdc-toolbar__section--align-end, .middle-section {
+    display: none;
+  }
+
+  .mdc-toolbar {
+    height: 60px;
+
+    & .logo {
+      width: 153px;
+      height: 24px;
+    }
+  }
+}
+
+.mdc-toolbar__section--align-start {
+  flex-grow: 1;
+}
+.mdc-toolbar__section {
+  flex-grow: 3.9;
+}
+.mdc-toolbar__section--align-end {
+  flex-grow: 1.28;
+}
+.logo-section {
+  flex-grow: 1;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+  .mdc-toolbar {
+    padding: 0 20px;
+  }
+}
+
+.drawer-list {
+  margin-top:30px;
+  -webkit-padding-start: 16px;
+}
+
+.drawer-social {
+  margin: 85px 0 0 0 !important;
+  padding-left: 16px;
+}

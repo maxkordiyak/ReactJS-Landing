@@ -1,0 +1,27 @@
+hr {
+  border-color: #000;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  border: 0;
+  border-top: 1px solid #000;
+}
+
+.services-subtitle {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.services-paragraph {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.services-ul {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-padding-start: 28px;
+
+  & li {
+    padding-left: 12px;
+  }
+}
